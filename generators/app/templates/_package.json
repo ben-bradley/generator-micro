@@ -1,0 +1,32 @@
+{
+  "name": "<%= props.name %>",
+  "version": "1.0.0",
+  "description": "A basic template for building REST Microservices",
+  "main": "index.js",
+  "dependencies": {
+    "argify": "0.0.3",
+    "config": "^1.14.0",
+    "debug": "^2.2.0",
+    "glob": "^5.0.13",
+    "good": "^6.2.0",
+    "good-file": "^5.0.1",
+    "hapi": "^8.8.0",
+    "joi": "^6.5.0",
+    "lout": "^6.2.3",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-run": "^1.6.8",
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec"
+  },
+  "author": "<%= props.author %>",
+  "license": "MIT"
+}

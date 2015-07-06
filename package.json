@@ -1,0 +1,42 @@
+{
+  "name": "generator-micro",
+  "version": "0.0.1",
+  "description": "A Yeoman generator for creating a ES6-capable, Hapi-based, microservices API.",
+  "license": "MIT",
+  "main": "generators/app/index.js",
+  "repository": "ben-bradley/generator-micro",
+  "author": {
+    "name": "Ben Bradley",
+    "email": "",
+    "url": "https://github.com/ben-bradley"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators/app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "es6",
+    "es2015",
+    "tdd",
+    "babel",
+    "gulp",
+    "hapi",
+    "microservices",
+    "rest",
+    "api"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.18.9",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
