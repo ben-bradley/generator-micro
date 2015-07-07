@@ -1,4 +1,4 @@
-# generator-micro
+# generator-micro [![Build Status](https://secure.travis-ci.org/ben-bradley/generator-micro.png?branch=master)](https://travis-ci.org/ben-bradley/generator-micro)
 
 This is still in development, please don't use it yet.
 
