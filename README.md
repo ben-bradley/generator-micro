@@ -2,6 +2,11 @@
 
 This is still in development, please don't use it yet.
 
+## Todo
+
+1. Write a good readme.md
+2. Continue development
+
 ## Install
 
 ```shell
