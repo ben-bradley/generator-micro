@@ -77,9 +77,6 @@ module.exports = yeoman.generators.Base.extend({
 
       props.appName = props.appName || this.appname.split(/[- ]/)[1] || this.appname;
 
-      console.log('APPNAME: ', this.appname);
-      console.log('appName: ', props.appName);
-
       this.props = props;
       done();
     }.bind(this));
@@ -115,5 +112,5 @@ module.exports = yeoman.generators.Base.extend({
 
     }
   }
-  
+
 });

@@ -1,7 +1,7 @@
 {
   "name": "generator-micro",
   "version": "0.1.0",
-  "description": "A Yeoman generator for creating a ES6-capable, Hapi-based, microservices API.",
+  "description": "A Yeoman generator for creating a ES6-capable, Hapi-based, REST microservices API.",
   "license": "MIT",
   "main": "generators/app/index.js",
   "repository": "ben-bradley/generator-micro",
@@ -14,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -R spec"
   },
   "files": [
     "generators/app"
