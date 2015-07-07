@@ -65,12 +65,14 @@ module.exports = yeoman.generators.Base.extend({
 
       this.template('_package.json', 'package.json');
       this.template('src/_index.js', 'src/index.js');
-      this.template('src/controllers/_foo.js', 'src/controllers/foo.js');
-      this.template('src/handlers/_foo.js', 'src/handlers/foo.js');
-      this.template('src/routes/_foo.js', 'src/routes/foo.js');
-      this.template('test/_foo.js', 'test/foo.js');
 
     }
+  },
+
+  addModule: function() {
+    this.composeWith('micro:module', { options: {
+      composed: true
+    }});
   },
 
   install: function () {

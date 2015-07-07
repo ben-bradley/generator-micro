@@ -42,8 +42,8 @@ function test() {
 }
 
 function watchTest() {
-  gulp.watch('dist/**/*.js', ['test']);
-  gulp.watch('test/spec.js', ['test']);
+  gulp.watch('dist/**/*.js', ['test', 'monitor']);
+  gulp.watch('test/spec.js', ['test', 'monitor']);
 }
 
 gulp.task('clean', function (done) {
@@ -62,6 +62,6 @@ gulp.task('test', test);
 
 gulp.task('ci', ['test'], watchTest);
 
-gulp.task('develop', ['watch'], watchTest);
+gulp.task('develop', ['watch', 'ci'], watchTest);
 
 gulp.task('default', ['watch'], monitor);

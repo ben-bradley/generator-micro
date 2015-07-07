@@ -59,8 +59,9 @@ debug('excludes: ', excludes);
 /**
  * Read each "services-*" module and load it
  */
-let servicesGlob = __dirname + '/node_modules/microservice-*/index.js',
+let servicesGlob = __dirname + '/../node_modules/microservice-*/index.js',
   services = glob.sync(servicesGlob);
+debug('servicesGlob: ', servicesGlob);
 debug('services: ', services);
 for (var s in services) {
   let file = services[s],
