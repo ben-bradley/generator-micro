@@ -14,7 +14,7 @@ The goal of this generator is to make it possible to spin up scalable, RESTful A
 
 The components are built with the goal of staying as modular and composable as possible so that there are clear scopes of responsibility and that code is functional and self-contained.
 
-`generator-micro` leverages Hapi's plugin framework to keep your microservices isolated and modular.  Within a particular microservice, the route, handler, controller model is followed to enable DRY and ease of maintance.  Using Hapi plugins and `package.json` to manage dependencies makes building and refactoring services fairly painless.
+`generator-micro` leverages Hapi's plugin framework to keep your microservices isolated and modular.  Within a particular microservice, the `route`, `handler`, `controller` model is followed to enable DRY and ease of maintenance.  Using Hapi plugins and `package.json` to manage dependencies and versions makes building and refactoring services fairly painless.
 
 ## Generators
 
@@ -66,7 +66,7 @@ A `microservice` is really just a Hapi plugin.  By leveraging this framework, it
 
 Microservices are intended to be self-contained packages that can be tested and developed independently of each other even if they're hosted on the same Server.
 
-### Versioning
+### Versioning & Routing
 
 Microservice versioning is managed by reading the value in the major position of the `version` value in its `package.json`.  For example, if your `package.json` looks like this:
 
@@ -90,7 +90,7 @@ GET http://localhost:3000/awesome/1/foo
 
 ### `yo micro:service`
 
-It's intended that you create a separate repo in which to build your microservice.  Doing this enables the framework to leverage the code and API versioning, and dependency management that NPM provides.
+You should create a separate repo in which to build your microservice.  Doing this enables the server framework to leverage API versioning, and dependency management that NPM provides, and modularity required to rapidly create and modify a microservice.
 
 ```shell
 $ cd ~/gits
@@ -103,7 +103,7 @@ $ gulp develop # <- compile ES6 and watch /src & /test
 
 ## Modules
 
-A 'module' is considered to be a combination of `router`, `handler`, `controller` and `test`.  In the future a `model` may be added, but that's dependent on how patterns emerge.
+A `module` is considered to be a combination of `router`, `handler`, `controller` and `test`.  In the future a `model` may be added, but that's dependent on how patterns emerge.
 
 A module is what manages the life-cycle of a request, each component has a specific part to play (scope of responsibility):
 
