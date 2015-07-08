@@ -1,6 +1,6 @@
 {
   "name": "generator-micro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Yeoman generator for creating a ES6-capable, Hapi-based, REST microservices API.",
   "license": "MIT",
   "main": "generators/app/index.js",
