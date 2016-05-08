@@ -17,7 +17,9 @@
     "test": "mocha -R spec"
   },
   "files": [
-    "generators/app"
+    "generators/app",
+    "generators/service",
+    "generators/module"
   ],
   "keywords": [
     "yeoman-generator",
